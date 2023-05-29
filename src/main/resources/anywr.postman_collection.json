@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "8583c3de-77de-4130-8a6e-686b6615e2ef",
+		"name": "anywr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6564300"
+	},
+	"item": [
+		{
+			"name": "getToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"deval@anywrUser\",\r\n    \"password\": \"deval@anywrUser\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/anywr/auth/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"anywr",
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/anywr/anywrUser/create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"deval@anywrUser\",\r\n    \"password\": \"deval@anywrUser\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/anywr/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"anywr",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"className\": \"ClassA\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8180/anywr/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"anywr",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8180/api/v1/auth/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"devalere21@mail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8180/anywr/user/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"anywr",
+						"user",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8180/api/v1/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":\"Devalere21\",\r\n    \"lastname\":\"kamguia21\",\r\n    \"email\":\"devalere21@mail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8180/anywr/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"anywr",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8180/api/v1/demo-controller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8180/anywr/user/demo-controller",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"anywr",
+						"user",
+						"demo-controller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveClass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5,\r\n    \"name\":\"ClassE\",\r\n    \"idteacher\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8180/anywr/class",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"anywr",
+						"class"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
