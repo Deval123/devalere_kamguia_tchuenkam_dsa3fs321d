@@ -9,6 +9,7 @@ import lombok.extern.jackson.Jacksonized;
 
 @Data
 @Builder
+@Jacksonized
 public class TeacherDto {
     private Integer id;
 

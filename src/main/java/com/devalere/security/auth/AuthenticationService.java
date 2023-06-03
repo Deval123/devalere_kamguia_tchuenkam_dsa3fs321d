@@ -1,7 +1,7 @@
 package com.devalere.security.auth;
 
 import com.devalere.security.repositories.AnywrUserRepository;
-import com.devalere.security.service.JwtService;
+import com.devalere.security.service.impl.JwtService;
 import com.devalere.security.user.AnywrUser;
 import com.devalere.security.user.Role;
 import lombok.RequiredArgsConstructor;

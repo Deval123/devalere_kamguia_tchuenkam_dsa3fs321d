@@ -5,10 +5,12 @@ import com.devalere.security.entities.Teacher;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Data;
+import lombok.extern.jackson.Jacksonized;
 
 import java.util.List;
 @Data
 @Builder
+@Jacksonized
 public class ClasseDto {
     private Integer id;
 

@@ -1,4 +1,4 @@
-package com.devalere.security.service;
+package com.devalere.security.service.impl;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
